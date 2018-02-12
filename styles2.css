@@ -24,7 +24,7 @@ a:hover {
 
 #block-center {
   display: block;
-  background-color: blue;
+/*   background-color: blue; */
   position: relative;
   top: 0;
   left: 0;
@@ -52,7 +52,7 @@ a:hover {
 
 
 #column-left {
-  background-color: yellow;
+/*   background-color: yellow; */
   height: 100vh;
   width: 50vw;
   float: left;
@@ -60,7 +60,7 @@ a:hover {
 }
 
 #column-right {
-  background-color: purple;
+/*   background-color: purple; */
   height: 100vh;
   width: 50vw;
   float: left;
