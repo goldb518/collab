@@ -1,0 +1,124 @@
+html, body {
+  margin: 0;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 4.5vh;
+  line-height: 7.5vh;
+}
+
+
+* {
+  box-sizing: border-box;
+/*  cursor: crosshair;*/
+}
+
+a {
+  color: #004AC7;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+
+#block-center {
+  display: block;
+  background-color: blue;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#header {
+/*  display: block;*/
+  width: 100vw;
+  height: 10vh;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  background-color: #F6EAD6;
+  text-align: center; 
+  font-size: 4vh;
+  line-height: 4vh;
+}
+
+#header:hover {
+  font-style: italic;
+}
+
+
+#column-left {
+  background-color: yellow;
+  height: 100vh;
+  width: 50vw;
+  float: left;
+  overflow: scroll;
+}
+
+#column-right {
+  background-color: purple;
+  height: 100vh;
+  width: 50vw;
+  float: left;
+  overflow: scroll;
+}
+
+.section {
+  float: left;
+  width: 100%;
+  height: 100vh;
+  padding: 8%;
+  overflow: hidden;
+}
+
+p {
+  text-align: center;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2vw;
+}
+
+.section1 {
+  background-color: #282829;
+  color: #F6EAD6;
+}
+
+.section2 {
+  background-color: white;
+}
+
+.section3 {
+  background-color: white;
+}
+
+.section4 {
+  background-color: #F6EAD6;
+}
+
+.section5 {
+  background-color: white;
+}
+
+
+#property {
+  color: #00A1B4;
+}
+
+#property:hover {
+  font-style: italic;
+}
+
+#value {
+  color: #004AC7;
+}
+
+#value:hover {
+  font-style: italic;
+}
+
+#next {
+  color: #004AC7;
+}
