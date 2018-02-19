@@ -84,11 +84,13 @@ url("CircularStd-Book.otf") format("opentype"),
 .show:hover {
   color: red;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .hide:hover {
   color: red;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 img[src*="kippah_collage"] {
