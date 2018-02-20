@@ -7,17 +7,24 @@
   <script>
   $(document).ready(function(){
     $(".hypertext").hide();
-  })
+    $(".booktext").hide();
+  });
 
   $(document).ready(function(){
     $(".show").click(function(){
       $(".hypertext").show();
+      $(".booktext").show();
+      $('.plus').text('(-)');
+      var clicked = true;
     });
   });
 
   $(document).ready(function(){
     $(".hide").click(function(){
       $(".hypertext").hide();
+      $(".booktext").hide();
+      $('.plus').text('(+)');
+      var clicked = false;
     });
   });
 
@@ -91,6 +98,37 @@
       });
   });
 
+  $(document).ready(function(){
+    var clicked = false;
+      $(".plus1").click(function(){
+        if(clicked == true){
+            $(".booktext1").hide(); 
+            $('.plus1').text('(+)');    
+              clicked = false;            
+          } 
+          else if (clicked == false) {
+            $(".booktext1").show();
+            $('.plus1').text('(-)');   
+            clicked = true;
+          }
+      });
+  });
+
+  $(document).ready(function(){
+    var clicked = false;
+      $(".plus2").click(function(){
+        if(clicked == true){
+            $(".booktext2").hide();
+            $('.plus2').text('(+)');    
+            clicked = false;            
+          } 
+          else if (clicked == false) {
+            $(".booktext2").show();
+            $('.plus2').text('(-)');
+            clicked = true;
+          }
+      });
+  });
   </script>
 </head>
 <body>
@@ -98,12 +136,18 @@
 <!-- <div id="toggles">Show All / Hide All</div> -->
 <div id="container">
 <p>
-<span id="toggles"><span class="show">SHOW ALL</span>&#160; &#160;/&#160; &#160;<span class="hide">HIDE ALL</span></span>The <span class="expand kippah">kippah</span> <span class="hypertext hypertext1">(Hebrew, plural kippot)</span> or <span class="expand yarmulke">yarmulke</span> <span class="hypertext hypertext2">(Yiddish)</span> is a small cap worn to signal Jewish faith and identity and―through variations in surface decoration, color, and method or place of manufacture―secular selfhood and individual style. A public declaration of piety under the omnipotent eye of God, it was traditionally worn only by men. However since the 1970s, when women were included in the rabbinical class, female rabbis and laywomen have also reached for the kippah to indicate their equality within Judaism and to express their personal connection to their faith—a move not without substantial controversy.</p>
+<span id="toggles"><span class="show">SHOW ALL</span>&#160; &#160;/&#160; &#160;<span class="hide">HIDE ALL</span></span>The <span class="expand kippah">kippah</span> <span class="hypertext hypertext1">(Hebrew, plural kippot)</span> or <span class="expand yarmulke">yarmulke</span> <span class="hypertext hypertext2">(Yiddish)</span> is a small cap worn to signal Jewish faith and identity and–through variations in surface decoration, color, and method or place of manufacture–secular selfhood and individual style. <span class="plus plus2">(+)</span>
+<span class="booktext booktext2">Few external symbols identify the modern Jew to the outside world than the kippa (yarmulke, skullcap).</span>
+A public declaration of piety under the omnipotent eye of God, it was traditionally worn only by men. However since the 1970s, when women were included in the rabbinical class, female rabbis and laywomen have also reached for the kippah to indicate their equality within Judaism and to express their personal connection to their faith—a move not without substantial controversy.</p>
 <br><br>
 <!-- <img  id="collage" src="kippah_collage.jpg"> -->
-<p>Although in ancient texts Jewish religious leaders are described as wearing head coverings, it is not <span class="expand halakhic">halakhic</span> <span class="hypertext hypertext3">(explicitly required by Jewish law)</span> for ordinary folk to cover their heads for religious or secular activities. Head coverings for men have been what scholar Esther Juhasz terms on “obligatory norm” in most Jewish communities from the nineteenth century onward, though they were voluntarily adopted haphazardly throughout the medieval Jewish world, spurred by an edict by the fifteenth-century Czech Rabbi Israel Bruna that denounced male bareheaded-ness. As Juhasz highlights, because Jews have had to identify themselves by wearing differentiated clothing throughout their long history of persecution, covering one’s head has at times been a compulsory practice, as was the case in Europe as early as the medieval period. In turn, covering one’s head also became an act of resistance against such laws, one enforced by rabbis as a way of “transforming their experience of vestimentary apartheid into a condition of Jewish law.” The <span class="expand talmud">Talmud</span><span class="hypertext hypertext5">—the commentary on the Torah, the central text of Judaism—</span> does suggest that covering the head is an appropriate sign of awe or <span class="expand yirat">yirat shamayim</span> <span class="hypertext hypertext4">(fear of heaven)</span> before the Divine Presence, though there is no mention of what material or exact form the covering might take (except that it may not be made of wool and linen blend, which Jewish law prohibits). <a href="#header">TOP</a>
+<p>Although in ancient texts Jewish religious leaders are described as wearing head coverings, it is not <span class="expand halakhic">halakhic</span> <span class="hypertext hypertext3">(explicitly required by Jewish law)</span> for ordinary folk to cover their heads for religious or secular activities. Head coverings for men have been what scholar Esther Juhasz terms on “obligatory norm” in most Jewish communities from the nineteenth century onward, though they were voluntarily adopted haphazardly throughout the medieval Jewish world, spurred by an edict by the fifteenth-century Czech Rabbi Israel Bruna that denounced male bareheaded-ness. As Juhasz highlights, because Jews have had to identify themselves by wearing differentiated clothing throughout their long history of persecution, covering one’s head has at times been a compulsory practice, as was the case in Europe as early as the medieval period. In turn, covering one’s head also became an act of resistance against such laws, one enforced by rabbis as a way of “transforming their experience of vestimentary apartheid into a condition of Jewish law.” The <span class="expand talmud">Talmud</span><span class="hypertext hypertext5">—the commentary on the Torah, the central text of Judaism—</span> does suggest that covering the head is an appropriate sign of awe or <span class="expand yirat">yirat shamayim</span> <span class="hypertext hypertext4">(fear of heaven)</span> before the Divine Presence, <span class="plus plus1">(+)</span>
+<span class="booktext booktext1">
+While we could certainly debate whether these Talmudic texts require, or simply advise, the wearing of a head covering at all times, it is clear from the Talmudic sources that the rabbis associated covering the head with added reverence and fear of God.
+</span>
+though there is no mention of what material or exact form the covering might take (except that it may not be made of wool and linen blend, which Jewish law prohibits). <a href="#header">TOP</a>
 </p>
 </div>
-<!-- <div id="footer">Text from: "Items: Is Fashion Modern?" The Museum of Modern</div> -->
+<div id="footer">Text from: Items: Is Fashion Modern?" The Museum of Modern and <span style="font-family: 'Circular Book Italic';">"Jewish Law as a Journey" Rabbi David Silverstein</span></div>
 </body>
 </html>
