@@ -201,8 +201,8 @@ a:hover {
 a:visited {
   color: red;
 }
-/*
+/* 
 ::selection{
   background-color: red;
   color: white;
-  opacity: none;*/
+  opacity: none; */
