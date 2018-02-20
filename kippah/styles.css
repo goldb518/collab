@@ -25,6 +25,14 @@ src:
 url("CircularStd-Book.otf") format("opentype"),
 }
 
+@font-face {
+font-family: "Circular Book Italic";
+src: url("CircularStd-BookItalic.otf");
+src: 
+url("CircularStd-BookItalic.otf") format("opentype"),
+}
+
+
 
 /*img {
   position: absolute;
@@ -54,20 +62,17 @@ url("CircularStd-Book.otf") format("opentype"),
 
 #footer {
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  overflow-wrap: break-word;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
   background-color: #FFF;
   padding-left: 10%;
   padding-right: 10%;
-  padding-bottom: 2%;
   padding-top: 2%;
-  text-align: center;
-  font-size: 2vh;
+  padding-bottom: 4%;
+  font-size: 2.5vh;
   font-family: 'Rando Medium', Arial, sans-serif;
-  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  text-align: center;
 }
 
 
@@ -93,6 +98,10 @@ url("CircularStd-Book.otf") format("opentype"),
   text-decoration: underline;
 }
 
+span {
+  line-height: 9vh;
+}
+
 img[src*="kippah_collage"] {
   height: 50vh;
   float: right;
@@ -112,7 +121,7 @@ img[src*="kippah_collage"] {
   padding-left: 10%;
   padding-right: 10%;
   margin: 0;
-  padding-bottom: 5%;
+  padding-bottom: 0;
 }
 
 /*#text {
@@ -177,6 +186,36 @@ p {
   padding: 0; 
 }
 
+
+.plus {
+  font-size: 5vh;
+  line-height: 9vh;
+  font-family: 'Circular Book', Arial, sans-serif;
+  color: #0E2F53;
+  margin: 0;
+  padding: 0;
+}
+
+.plus:hover {
+  color: red;
+  cursor: pointer;
+  font-family: 'Circular Book Italic', Arial, sans-serif;
+}
+
+
+.booktext {
+  font-size: 5vh;
+  line-height: 9vh;
+  font-family: 'Circular Book Italic', Arial, sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0; 
+}
+
+.booktext:hover {
+  color: red;
+}
+
 .expand:hover {
   cursor: pointer;
 
@@ -201,8 +240,8 @@ a:hover {
 a:visited {
   color: red;
 }
-/* 
+/*
 ::selection{
   background-color: red;
   color: white;
-  opacity: none; */
+  opacity: none;*/
