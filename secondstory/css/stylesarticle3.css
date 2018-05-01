@@ -1,0 +1,408 @@
+html {
+  width: 100vw;
+  margin: 0;
+  background-color: #000;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+font-family: "Visual";
+src: url("fonts/Visual.otf");
+src: 
+url("fonts/Visual.otf") format("opentype");
+}
+
+#container {
+  position: absolute;
+  top: 0;
+}
+
+#fillleft {
+  background-color: #D3AE66;
+  cursor: url(cursorleft.png) 10 10, pointer;
+}
+
+#fillright {
+  background-color: #D3AE66;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  height: inherit;
+  background-color: inherit;
+
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+/*<----------BACKGROUND GRID---------->*/
+
+.backgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr;
+  background-color: #666666;
+  padding: .4vh;
+  margin: 0;
+  grid-gap: .4vh;
+  z-index: 1;
+}
+
+.backgrid > div {
+  background-color: #000;
+  height: 100vh;
+  color: #D3AE66;
+  font-family: helvetica;
+}
+
+.extend1 {
+  grid-column: 2 / 7;
+  grid-row: 1 / 2;
+}
+
+.extend2 {
+  grid-column: 7 / 12;
+  grid-row: 1 / 2;
+}
+
+.extend3 {
+  grid-column: 12 / 14;
+  grid-row: 1 / 2;
+}
+
+/*<----------HEADER---------->*/
+
+.header {
+  width: 100vw;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr;
+  margin: 0;
+  z-index: 2;
+  top: 0;
+}
+
+.header > div {
+  display: block;
+  position: relative;
+  height: 8vh;
+}
+
+.header_extend1 {
+  grid-column: 2 / 7;
+  grid-row: 1 / 2;
+}
+
+.header_extend2 {
+  grid-column: 7 / 12;
+  grid-row: 1 / 2;
+}
+
+.header_extend3 {
+  grid-column: 12 / 14;
+  grid-row: 1 / 2;
+}
+
+.logo {
+  float: left;
+  width: 15vw;
+  position: absolute;
+  padding-top: 1vh;
+  left: 0;
+  top: 0;
+}
+
+.icon {
+  float: right;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.title2 {
+  text-align: left;
+  color: #D3AE66;
+  font-family: "Visual";
+  font-size: 3.5vh;
+  padding-top: 1vh; 
+  height: 8vh;
+}
+
+.title2:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.title2nohover {
+  text-align: left;
+  color: #D3AE66;
+  font-family: "Visual";
+  font-size: 3.5vh;
+  padding-top: 1vh; 
+  height: 8vh;
+}
+
+.white {
+  color: #fff;
+}
+
+/*<----------NAVIGATION---------->*/
+
+.navigation {
+  width: 100vw;
+  height: 8vh;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr;
+  margin: 0;
+  z-index: 2;
+  top: 0;
+  border-top:.25vh solid #666666;
+  border-bottom:.25vh solid #666666;
+}
+
+.navigation > div {
+  color: #666666;
+  font-family: helvetica;
+  text-align: center;
+  font-size: 3vh;
+  margin-top: 2.2vh; 
+  margin-bottom: 2vh; 
+}
+
+.navigation > div:hover {
+  font-style: italic;
+  cursor: pointer;
+  color: #fff;
+}
+
+/*<----------INFO---------->*/
+
+.info {
+  width: 100vw;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr;
+  margin: 0;
+  z-index: 2;
+  top: 0;
+}
+
+.info > div {
+  color: #D3AE66;
+  font-family: "Visual";
+  text-align: left;
+  font-size: 4vh;
+  padding-top: 2.2vh; 
+  padding-bottom: 2vh;
+  height: 8vh;
+}
+
+.extend1 {
+  grid-column: 2 / 7;
+  grid-row: 1 / 2;
+}
+
+.extend2 {
+  grid-column: 7 / 12;
+  grid-row: 1 / 2;
+}
+
+.extend3 {
+  grid-column: 12 / 14;
+  grid-row: 1 / 2;
+}
+
+.sectitle {
+  font-size: 4vh;
+  color: #fff;
+  font-family: "Visual"
+}
+
+.helvetica {
+  font-family: helvetica;
+}
+
+/*<----------ARTICLES---------->*/
+
+
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #D3AE66;
+  padding: .4vh;
+  padding-top: 1vh;
+  margin: 0;
+  z-index: 2;
+}
+
+.articles > div {
+  background-color: #000;
+  font-family: helvetica;
+  border-bottom: .7vh solid #D3AE66;
+  font-size: 2.5vh;
+/*  line-height: 3.5vh;*/
+  overflow-x: scroll;
+  overflow-y: hidden; 
+  position: relative;
+  scroll-direction: horizontal;
+  color: #fff;
+
+
+
+}
+
+/*.article1:hover {
+  color: yellow;
+  cursor: pointer;
+}*/
+
+
+.extend1article {
+  grid-column: 2 / 14;
+  grid-row: 1 / 2;
+  position: relative;
+  padding: none;
+  height: 27.667vh;
+  cursor: url(cursorboth.png) 10 10, pointer;
+}
+
+.extend2article {
+  grid-column: 2 / 8;
+  grid-row: 2 / 4;
+  position: relative;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  height: 55.333vh;
+  text-indent: 2em;
+    font-size: 2.3vh;
+    text-align: left;
+    color: #fff;
+    line-height: 4.2vh;
+    font-family: helvetica;
+    letter-spacing: -.008vh;
+    letter-spacing: .01vh;
+}
+
+.extend3article {
+  grid-column: 8 / 14;
+  grid-row: 2 / 4;
+  position: relative;
+  height: 55.333vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  text-indent: 2em;
+    font-size: 2.3vh;
+    text-align: left;
+    color: #fff;
+    font-family: helvetica;
+    letter-spacing: -.008vh;
+    letter-spacing: .01vh;
+    line-height: 4.2vh;
+}
+
+/*.extend4article {
+  grid-column: 2 / 8;
+  grid-row:3 / 4;
+  position: relative;
+    padding-top: 2vh;
+}
+
+.extend5article {
+  grid-column: 8 / 14;
+  grid-row: 3 / 4;
+  position: relative;
+  padding-top: 2vh;
+}
+*/
+
+.title {
+  font-size: 4vh;
+  color: #fff;
+  text-align: center;
+}
+
+/*.copy {
+  font-size: 3vh;
+  text-align: left;
+  color: #fff;
+  line-height: 4.2vh;
+  font-family: helvetica;
+}*/
+
+/*<----------IMAGES---------->*/
+
+
+.image {
+  position: absolute;
+  height: 100%;
+}
+
+
+
+
+/*<----------ABOUT PAGE---------->*/
+
+.about {
+  color: #fff;
+  font-style: italic;
+}
+
+.extend1about {
+  grid-column: 2 / 14;
+  grid-row: 1 / 2;
+  position: relative;
+  overflow: hidden;
+}
+
+.copyabout {
+  font-size: 3vh;
+  padding-top: 5vh;
+  padding-bottom: 30vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
+  color: #fff;
+  line-height: 4.2vh;
+  font-family: helvetica;
+}
+
+.titleabout {
+  font-size: 4vh;
+  color: #fff;
+  text-align: center;
+  padding-top: 8vh;
+}
+
+
+
