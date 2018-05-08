@@ -1,0 +1,157 @@
+html {
+  width: 100vw;
+  margin: 0;
+  background-color: #000;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  cursor: url(cursorX.png) 10 10, pointer;
+}
+
+#container {
+  position: absolute;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  height: inherit;
+  background-color: inherit;
+  
+}
+
+.pad {
+padding-top: 1.5vh;
+padding-left: 1.5vh;
+padding-right: 1.5vh;
+margin-top: 2vh;
+}
+
+
+
+
+
+/*<----------HEADER---------->*/
+
+.header {
+  width: 100vw;
+  height: 33vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr;
+  top: 0;
+  background-color: #D3AE66;
+}
+
+.header > div {
+    position: relative;
+    background-color: #000;
+}
+
+
+.logo {
+  float: left;
+  width: 75%;
+  position: absolute;
+  left: 0;
+  top: 0;
+padding: 1.5vh;
+margin-top: 2vh;
+}
+
+.icon {
+  float: right;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/*<----------NAVIGATION---------->*/
+
+.navigation {
+  width: 100vw;
+  height: 10vh;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr;
+  margin: 0;
+  top: 0;
+  background-color: #D3AE66;
+}
+
+.navigation > div {
+  color: #666666;
+  font-family: helvetica;
+  text-align: center;
+  font-size: 4.5vh;
+/*  margin-top: 2.2vh; 
+  margin-bottom: 2vh; */
+  background-color: #000;
+}
+
+.navigation > div:hover {
+  font-style: italic;
+/*  cursor: pointer;*/
+  color: #fff;
+}
+
+/*<----------INFO---------->*/
+
+.info {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr;
+  margin: 0;
+  top: 0;
+  background-color: #D3AE66;
+}
+
+.info > div {
+  color: #fff;
+  font-family: Helvetica;
+  text-align: center;
+  font-size: 4.5vh;
+/*  padding-top: 2.2vh; 
+  padding-bottom: 2vh;*/
+  height: 8vh;
+  background-color: #000;
+}
+
+/*<----------ARTICLES---------->*/
+
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #D3AE66;
+  margin: 0;
+  position: relative;
+}
+
+.articles > div {
+  background-color: #000;
+  height: 33vh;
+  color: #D3AE66;
+  font-family: helvetica;
+  font-size: 4.5vh;
+  height: 30vh;
+/*  border-bottom: .7vh solid #D3AE66;*/
+  position: relative;
+}
+
+.articles>div:hover {
+  color: #fff;
+/*  cursor: pointer;*/
+  font-style: italic;
+}
+
